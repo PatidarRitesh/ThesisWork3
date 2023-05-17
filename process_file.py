@@ -31,6 +31,8 @@ def rename_file(path):
 
 # for extracting files
 path_extracted = 'Arxiv_files_extracted'
+if not os.path.exists(path_extracted):
+    os.mkdir(path_extracted)
 
 folders = os.listdir(path)
 for folder in folders:
